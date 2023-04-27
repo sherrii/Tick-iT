@@ -12,7 +12,7 @@ router.post('/signup',userController.createUser,(req,res) => {
 });
 
 router.post('/login',userController.verifyUser,(req,res) => {
-    res.status(200).send(res.locals.user.username + ' is verified');
+    res.json(res.locals.isVerified);
 });
 
 module.exports = router;

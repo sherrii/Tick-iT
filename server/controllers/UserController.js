@@ -28,7 +28,7 @@ const UserController = {
     User.findOne ({username,password}).exec()
     .then(user => {
       console.log('user is found!',user);
-      res.locals.user= user;
+      res.locals.isVerified= 'true';
       return next(); 
     })
     .catch(err => {

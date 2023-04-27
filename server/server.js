@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   return res.status(200).sendFile(path.join(__dirname, '../index.html'));
 });
 
-// app.use(express.static(path.join(__dirname, '../client')));
+app.use(express.static(path.join(__dirname, './client/css/style.css')));
 /**
  * define user route handlers
 */
