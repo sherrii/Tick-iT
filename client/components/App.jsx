@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import LoginPage from './LoginPage';
 import DashBoard from './DashBoard';
+import '../style.css';
 
 class App extends Component {
 
@@ -31,7 +32,7 @@ class App extends Component {
     }
 
     render(){
-
+        console.log('current state: ', this.state.isVerified)
         if(this.state.isVerified) {
             return(
                 <div>

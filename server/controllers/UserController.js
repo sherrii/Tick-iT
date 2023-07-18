@@ -21,22 +21,41 @@ const UserController = {
     
   },
 
-  verifyUser (req,res,next) {
-
-    const {username,password} = req.body;
-    
-    User.findOne ({username,password}).exec()
-    .then(user => {
-      console.log('user is found!',user);
-      res.locals.isVerified= 'true';
-      return next(); 
-    })
-    .catch(err => {
-      console.error(err);
-      return next("caught error in verifyUser: ", err);
-    })
-    
+  verifyUser(req, res, next) {
+    const { username, password } = req.body;
+  
+    if (!username || !password) {
+      return next('Caught error in createUser');
+    }
+  
+    User.findOne({ username })
+      .then(user => {
+        if (!user) {
+          // user with provided username not found
+          return next('User not found');
+        }
+  
+        // check if password matches
+        if (user.password !== password) {
+          return next('Incorrect password');
+        }
+  
+        console.log('user is found!', user);
+  
+        res.locals.isVerified = true;
+        return next();
+      })
+      .catch(err => {
+        console.error(err);
+        return next(`caught error in verifyUser: ${err}`);
+      });
   }
+  
+  
+
+  // updateUser (req,res,next) {
+  //   const {}
+  // }
 
 };
 

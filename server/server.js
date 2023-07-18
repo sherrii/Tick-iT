@@ -11,7 +11,7 @@ mongoose.connect('mongodb+srv://sherrylu710:ZKtMuXaJuaaMpX0K@cluster0.5thsbwt.mo
 mongoose.connection.once('open', () => {
   console.log('Connected to Database');
 });
-
+ 
 
  /* handle parsing request body */
 app.use(express.json());
@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   return res.status(200).sendFile(path.join(__dirname, '../index.html'));
 });
 
-app.use(express.static(path.join(__dirname, './client/css/style.css')));
+app.use(express.static(path.join(__dirname, './client/style.css')));
 /**
  * define user route handlers
 */

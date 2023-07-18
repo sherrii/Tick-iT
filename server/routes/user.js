@@ -15,4 +15,8 @@ router.post('/login',userController.verifyUser,(req,res) => {
     res.json(res.locals.isVerified);
 });
 
+router.put('/update',userController.updateUser,(req,res) => {
+    res.json(res.locals.user, 'your username is changed');
+});
+
 module.exports = router;

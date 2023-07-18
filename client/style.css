@@ -1,0 +1,68 @@
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+#loginPage {
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+#loginForm {
+  font-size: 16px;
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid #68e1fd;
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 50px;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+#loginBtn {
+  display: flex;
+  gap: 20px;
+  
+}
+
+#btn1, #btn2 {
+  background-color: #2A94F4;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vw;
+}
+
+#searchForm {
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+
+#ticket-card {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 1px solid #2A94F4;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 30px;
+}
