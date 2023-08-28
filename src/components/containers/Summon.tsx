@@ -25,28 +25,28 @@ const Summon: React.FC<SummonProps> = ({ ticket }) => {
             <td>Violation:</td>
             <td>{ticket.violation}</td>
           </tr>
-          <tr>
+          {/* <tr>
             <td>County:</td>
             <td>{ticket.county}</td>
-          </tr>
+          </tr> */}
           <tr>
-            <td>Fine Amount:</td>
+            <td>Fine:</td>
             <td>${ticket.fine_amount}</td>
           </tr>
           <tr>
-            <td>Penalty Amount:</td>
+            <td>Penalty:</td>
             <td>${ticket.penalty_amount}</td>
           </tr>
-          <tr>
+          {/* <tr>
             <td>Interest Amount:</td>
             <td>${ticket.interest_amount}</td>
           </tr>
           <tr>
             <td>Reduction Amount:</td>
             <td>${ticket.reduction_amount}</td>
-          </tr>
+          </tr> */}
           <tr>
-            <td>Payment Amount:</td>
+            <td>Payment:</td>
             <td>${ticket.payment_amount}</td>
           </tr>
           <tr>
@@ -70,7 +70,7 @@ const Summon: React.FC<SummonProps> = ({ ticket }) => {
         rel="noopener noreferrer"
         className="border__btn"
       >
-        download summon Image
+        Dwnload Summon Image
       </a>
     
     </div>
