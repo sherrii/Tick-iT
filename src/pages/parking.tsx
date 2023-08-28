@@ -60,7 +60,7 @@ const Parking: React.FC = () => {
             <div className="col-4 col-lg-12 text-center">
               <h2 className="mb-35">Find Your Parking Ticket</h2>
 
-              <form onSubmit={handleSearch}>
+              <form className="searchForm" onSubmit={handleSearch}>
                 <label htmlFor="search">Enter Your Plate Number: </label>
                 <div className="searchBar">
                   <input
