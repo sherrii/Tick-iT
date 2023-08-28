@@ -55,22 +55,24 @@ const Summon: React.FC<SummonProps> = ({ ticket }) => {
           </tr>
         </tbody>
       </table>
-      {ticket.amount_due > 0 && (
-        <button className="payment-button">Make Payment</button>
-      )}
-      <a
-        href={ticket.summons_image.url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Summon Image
-      </a>
       <iframe
         src={ticket.summons_image.url}
         height="200"
         width="300"
         title="Iframe"
       ></iframe>
+      {ticket.amount_due > 0 && (
+        <button className="solid__btn">Make Payment</button>
+      )}
+      <a
+        href={ticket.summons_image.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="border__btn"
+      >
+        download summon Image
+      </a>
+    
     </div>
   );
 };

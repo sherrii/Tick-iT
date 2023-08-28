@@ -51,7 +51,7 @@ const Parking: React.FC = () => {
       // Reset the input field after search
     setSearch("");
   };
-
+  
   return (
     <Layout>
       <div className="pt-120 pb-120">
@@ -77,17 +77,22 @@ const Parking: React.FC = () => {
             </div>
           </div>
           {foundTickets.length > 0 && (
-            <div className="Plate Info">
+            <div className="plateInfo">
               <div>
                 <p>Plate#: {foundTickets[0].plate} </p>
                 <p>State: {foundTickets[0].state} </p>
                 <p>Total Ticket Found: {foundTickets.length}</p>
-                <p>
+                <p className="unpaidAmount">
                   Unpaid Amount:{" $"}
                   {+foundTickets
                     .filter((ticket) => ticket.amount_due > 0)
-                    .reduce((a, b) => a + b.amount_due, 0)}
+                    .reduce((a, b) => a + +b.amount_due, 0)}
                 </p>
+              </div>
+              
+              <div className="paymentBtn">
+                <button className="border__btn">Make Payment</button>
+                <button className="border__btn">Dispute</button>
               </div>
             </div>
           )}
