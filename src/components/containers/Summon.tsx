@@ -70,7 +70,7 @@ const Summon: React.FC<SummonProps> = ({ ticket }) => {
         rel="noopener noreferrer"
         className="border__btn"
       >
-        Dwnload Summon Image
+        Download Summon Image
       </a>
     
     </div>
