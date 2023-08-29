@@ -81,7 +81,7 @@ const Parking: React.FC = () => {
               <div>
                 <p>Plate#: {foundTickets[0].plate} </p>
                 <p>State: {foundTickets[0].state} </p>
-                <p>Total Ticket Found: {foundTickets.length}</p>
+                <p>Total Tickets Found: {foundTickets.length}</p>
                 <p className="unpaidAmount">
                   Unpaid Amount:{" $"}
                   {+foundTickets
