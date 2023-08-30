@@ -117,7 +117,7 @@ const Header = () => {
                     </div>
                     <div className="offcanvas__contact-text">
                       <Link href="tel:+1 (646) 645-4178" aria-label="Contact Us">
-                      +1 (646) 645-4178
+                      +1 (646) 645-0000
                       </Link>
                     </div>
                   </li>
