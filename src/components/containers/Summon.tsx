@@ -1,4 +1,5 @@
 import React from "react";
+import ParkingTicket from '@/type/type';
 
 interface SummonProps {
   ticket: ParkingTicket;

@@ -1,25 +1,7 @@
 import React, { useState, FormEvent } from "react";
 import Layout from "@/components/layout/Layout";
 import Summon from "@/components/containers/Summon";
-
-interface ParkingTicket {
-  plate: string;
-  state: string;
-  summons_number: string;
-  issue_date: string;
-  violation_time: string;
-  violation: string;
-  county: string;
-  fine_amount: number;
-  penalty_amount: number;
-  interest_amount: number;
-  reduction_amount: number;
-  payment_amount: number;
-  amount_due: number;
-  summons_image: {
-    url: string;
-  };
-}
+import ParkingTicket from '@/type/type';
 
 const Parking: React.FC = () => {
   const [search, setSearch] = useState("");
