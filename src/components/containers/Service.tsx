@@ -28,7 +28,7 @@ const Service = () => {
                     <Link href="service">Track</Link>
                   </h3>
                   <p>
-                  Effortlessly monitor your parking and traffic tickets' status.
+                  Effortlessly monitor your parking and traffic tickets&apos; status.
 
                   </p>
                 </div>

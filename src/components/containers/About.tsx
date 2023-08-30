@@ -35,7 +35,7 @@ const About = () => {
                   <Link href="/">Snap & Send</Link>
                 </h3>
                 <p>
-                Capture your ticket or use the app to uncover associated fines from NYC's servers.
+                Capture your ticket or use the app to uncover associated fines from NYC&apos;s servers.
                 </p>
               </div>
             </div>

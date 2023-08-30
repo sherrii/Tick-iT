@@ -54,7 +54,7 @@ const Features = () => {
                       >
                         <div className="accordion-body">
                           <p>
-                          No, if your violation is upheld, you won't be able to appeal it again through WinIt. You can attempt a personal appeal, but our specialists advise against it, as it's unlikely to succeed.
+                          No, if your violation is upheld, you won&apos;t be able to appeal it again through WinIt. You can attempt a personal appeal, but our specialists advise against it, as it&apos;s unlikely to succeed.
                           </p>
                         </div>
                       </div>
@@ -68,7 +68,7 @@ const Features = () => {
                           }
                           onClick={() => setImgTab(imgTab === 1 ? -1 : 1)}
                         >
-                          What's the estimated processing time for ticket disputes?
+                          What&apos;s the estimated processing time for ticket disputes?
                         </button>
                       </h2>
                       <div
@@ -129,7 +129,7 @@ const Features = () => {
                       >
                         <div className="accordion-body">
                           <p>
-                          Submit as soon as possible to avoid penalty fees. Aim for at least 7 business days before the 30-day deadline. Keep in mind, once submitted, the penalty cycle is paused until your ticket's hearing.
+                          Submit as soon as possible to avoid penalty fees. Aim for at least 7 business days before the 30-day deadline. Keep in mind, once submitted, the penalty cycle is paused until your ticket&apos;s hearing.
                           </p>
                         </div>
                       </div>
