@@ -10,7 +10,7 @@ const Parking: React.FC = () => {
 
   const handleSearch = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const plateSearch = search.toString();
+    const plateSearch = search.toString().toUpperCase();
 
     try {
       const res = await fetch(
